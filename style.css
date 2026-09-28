@@ -30,3 +30,9 @@
       border: 1px solid #dbe1e8;
       border-radius: 8px;
     }
+    #map {
+        width: 100%;
+        margin-top: 2rem;
+        border-radius: 8px;
+        height: 180px;
+    }

@@ -3,9 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="inframap.2026" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Home Inframap</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin=""/>
+  <style>
+    #map { height: 500px; }
+  </style>
 </head>
+
 <body>
   <nav aria-label="Main navigation">
     <a href="#home.html">Home</a>
@@ -17,8 +22,19 @@
   <main id="home">
     <section class="placeholder">
       <h1>Bem-vindo</h1>
-      <p>Este é o conteúdo de exemplo para o corpo da página web.</p>
+      <p>Este é o conteúdo de exemplo para o corpo da página web aonde vai estar o mapa.</p>
     </section>
+
+    <div id="map"> </div>    
+
   </main>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  <script>
+    const map = L.map('map').setView([-15.7801, -47.9292], 5);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      maxZoom: 19,
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    }).addTo(map);
+  </script>
 </body>
 </html>
