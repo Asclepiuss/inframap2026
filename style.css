@@ -1,0 +1,32 @@
+* { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #222;
+      background: #f4f6f8;
+    }
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      padding: 1rem 2rem;
+      background: #1f2937;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover { color: #93c5fd; }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .placeholder {
+      padding: 3rem;
+      background: #fff;
+      border: 1px solid #dbe1e8;
+      border-radius: 8px;
+    }
