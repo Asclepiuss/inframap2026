@@ -5,11 +5,12 @@
       color: #222;
       background: #f4f6f8;
     }
+
     nav {
       display: flex;
       align-items: center;
-      gap: 1.5rem;
-      padding: 1rem 2rem;
+      gap: 24px;
+      padding: 20px 32px;
       background: #1f2937;
     }
     nav a {
@@ -18,21 +19,25 @@
       font-weight: 600;
     }
     nav a:hover { color: #93c5fd; }
+
     main {
-      max-width: 960px;
+      max-width: 1000px;
+      max-height: fit-content;
       margin: 0 auto;
-      padding: 4rem 2rem;
+      padding: 20px 20px;
       text-align: center;
     }
     .placeholder {
-      padding: 3rem;
+      padding: 25px;
       background: #fff;
-      border: 1px solid #dbe1e8;
+      border: 1px solid #1f2937;
       border-radius: 8px;
     }
     #map {
-        width: 100%;
-        margin-top: 2rem;
+        margin-top: 16px;
         border-radius: 8px;
-        height: 180px;
+        margin: 0 auto;
+        height: 500px;
+        max-width: 960px;
     }
+    
